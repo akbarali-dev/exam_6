@@ -10,7 +10,7 @@ import java.util.Date;
 public class JWTProvider {
 
     long expirationTime = 1000 * 3600;
-    String secretKey = "B7SecretKey";
+    String secretKey = "akbarali";
 
     public String generateToken(String username) {
         String token = Jwts.builder()
@@ -42,7 +42,6 @@ public class JWTProvider {
             System.err.println("Bo'sh token");
         }
         return false;
-
     }
 
     public String getUsernameFromToken(String tokenClient) {
